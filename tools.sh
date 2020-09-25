@@ -1,7 +1,5 @@
 #!/bin/bash
 # Script to install cme,bloodhound,impacket, and responder on a brand new ubuntu minimal (including setting this server up as an ssh server too!)
-
-
 sudo apt update -y
 sudo apt install software-properties-common -y
 sudo add-apt-repository ppa:deadsnakes/ppa --force-yes
@@ -11,11 +9,8 @@ sudo apt install python3.8 git openssh-server python3-setuptools tmux rdate vim 
 echo "alias python3='/usr/bin/python3.8'" >> ~/.bashrc
 echo "alias python='/usr/bin/python3.8'" >> ~/.bashrc
 sudo python3.8 -m easy_install pip
-source ~/.bashrc
-
 sudo systemctl enable sshd
-
-python3 -m pip install pipx
+python3.8 -m pip install pipx
 pipx install crackmapexec
 pipx install bloodhound
 git clone https://github.com/lgandx/Responder.git
