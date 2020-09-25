@@ -3,7 +3,7 @@
 # Author: Scott Brink
 sudo apt update -y
 sudo apt install software-properties-common -y
-sudo add-apt-repository ppa:deadsnakes/ppa --force-yes
+sudo add-apt-repository ppa:deadsnakes/ppa -y
 sudo apt update -y
 # I'm sure I don't need something here, but I can't be bothered to bring it down, I don't care.
 sudo apt install python3.8 git openssh-server python3-setuptools tmux rdate vim curl nmap libssl-dev libffi-dev python-dev build-essential python3.8-distutils python3.8-venv python3.8-dev -y 
