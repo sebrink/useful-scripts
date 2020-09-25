@@ -11,6 +11,7 @@ echo "alias python='/usr/bin/python3.8'" >> ~/.bashrc
 sudo python3.8 -m easy_install pip
 sudo systemctl enable sshd
 python3.8 -m pip install pipx
+pipx install impacket
 pipx install crackmapexec
 pipx install bloodhound
 git clone https://github.com/lgandx/Responder.git
